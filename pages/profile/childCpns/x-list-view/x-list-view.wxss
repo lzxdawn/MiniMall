@@ -1,0 +1,27 @@
+/* pages/profile/childCpns/x-list-view/x-list-view.wxss */
+.list-view {
+  border-top: 36rpx solid #f8f8f8;
+}
+
+.list-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid #f8f8f8;
+  font-size: 32rpx;
+  background: #fff;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item image {
+  vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0 30rpx;
+}
+
+.list-item text {
+  vertical-align: middle;
+}

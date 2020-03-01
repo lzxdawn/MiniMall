@@ -1,0 +1,20 @@
+<!--pages/category/childCpns/x-content/x-content.wxml-->
+<scroll-view class="content" scroll-y>
+  <view class="subcategory">
+    <block wx:for="{{subcategories}}" wx:key="index">
+      <view class="item">
+          <image src="{{item.image}}" mode="widthFix"></image>
+          <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 工具栏 -->
+  <x-tab-control titles="{{['综合', '新品', '销量']}}" bind:tabclick="tabClick"/>
+
+  <!-- 详情数据展示 -->
+  <view class="detail">
+    <x-goods goods="{{categoryDetail}}" />
+  </view>
+</scroll-view>
+

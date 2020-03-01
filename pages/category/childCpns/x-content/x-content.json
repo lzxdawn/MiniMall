@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-goods": "/components/x-goods/x-goods",
+    "x-tab-control": "/components/x-tab-control/x-tab-control"
+  }
+}

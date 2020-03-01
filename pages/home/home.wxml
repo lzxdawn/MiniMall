@@ -1,0 +1,28 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+    <!-- 展示轮播图 -->
+  <view class="content">
+      <x-swiper list="{{banners}}" />
+
+    <!-- 推荐数据展示 -->
+    <x-recommend recommends="{{recommends}}" bind:imageLoad="handleImageLoad"/>
+
+    <!-- 展示本周流行 -->
+    <x-popular/>
+
+    <!-- tab-control -->
+
+    <x-tab-control class="{{isTabFiexd ? 'fiexd' : ''}}"  id="tab-control"   titles="{{titles}}" bind:tabclick="handleTabClick"/>
+
+    <x-tab-control titles="{{titles}}" wx:if="{{isTabFiexd}}"bind:tabclick="handleTabClick"/>
+
+    <!-- 展示商品列表 -->
+
+    <x-goods goods="{{goods[currentType].list}}" />
+
+    <!-- 回到顶部 -->
+
+    <x-back-top wx:if="{{showBackTop}}" />
+  </view>
+</view>
+

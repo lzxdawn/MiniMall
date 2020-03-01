@@ -1,0 +1,25 @@
+/* pages/profile/childCpns/x-info/x-info.wxss */
+.info {
+  display: flex;
+  height: 200rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.info-item {
+  flex: 1;
+  padding: 50rpx 0;
+  font-size: 32rpx;
+}
+
+.info-discount {
+  border-left: 5rpx solid #f8f8f8;
+  border-right: 5rpx solid #f8f8f8;
+}
+
+.count {
+  color: #ff5f3e;
+  font-size: 40rpx;
+  font-weight: 700;
+  line-height: 1.5;
+}

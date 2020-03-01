@@ -1,0 +1,44 @@
+/* components/x-goods-item/x-goods-item.wxss */
+.goods-item {
+  text-align: center;
+  padding-bottom: 90rpx;
+  color: #333;
+}
+
+.goods-item image {
+  width: 100%;
+  height: auto;
+  border-radius: 10rpx;
+}
+
+.desc-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5rpx;
+  padding: 10rpx 0;
+}
+
+.info {
+  font-size: 28rpx;
+  position: relative;
+}
+
+.desc-info > .title {
+  font-size: 32rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info > .price {
+  color: #ff5777;
+}
+
+.info .icon {
+  width: 30rpx;
+  height: 30rpx;
+  padding: 0 6rpx 0 10rpx;
+  position: relative;
+  top:5rpx;
+}

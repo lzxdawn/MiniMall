@@ -1,0 +1,17 @@
+/* pages/home/home.wxss */
+
+.home {
+  height: 100%;
+}
+
+.content {
+  height: 100%；
+}
+
+.fiexd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
